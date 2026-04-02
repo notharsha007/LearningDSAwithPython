@@ -1,0 +1,77 @@
+Concept — Two Pointers
+
+The Two Pointer technique means using two indices to traverse an array instead of just one.
+
+Example:
+
+nums = [1,2,3,4,5]
+
+Normally we use one pointer:
+
+for i in range(len(nums)):
+
+But sometimes we use two pointers:
+
+left pointer
+right pointer
+
+Example:
+
+left = 0
+right = len(nums) - 1
+Why Two Pointers Exist
+
+Sometimes we want to:
+
+move elements
+compare elements
+compress arrays
+swap elements
+scan from both sides
+
+Using two pointers lets us do this in one pass.
+
+Two Common Two-Pointer Patterns
+
+There are two major types.
+
+Pattern 1 — Opposite Ends
+
+Pointers start at both ends.
+
+left → beginning
+right → end
+
+Example:
+
+left = 0
+right = len(nums) - 1
+
+Then move them inward.
+
+Used in problems like:
+
+Two Sum II
+Container With Most Water
+Valid Palindrome
+Pattern 2 — Fast & Slow Pointers
+
+Both pointers start at the beginning.
+
+slow pointer
+fast pointer
+
+Example:
+
+slow = 0
+for fast in range(len(nums)):
+
+The fast pointer scans the array, and the slow pointer tracks where to place elements.
+
+Used for:
+
+removing elements
+moving elements
+compressing arrays
+
+This is the pattern used in Move Zeroes.
