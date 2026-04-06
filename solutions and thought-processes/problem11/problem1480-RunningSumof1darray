@@ -1,0 +1,15 @@
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        ans_array=[]
+        currentsum = 0
+        for i in range(len(nums)):
+            currentsum += nums[i]
+            ans_array.append(currentsum)
+        return ans_array
+    
+
+''' My thought Process And Experience
+
+This problem required me to return an array of running sum, i.e, to add elements to a new array  which nothing but the sum of the previous element and current element.
+so i declared an empty array and kept track of the current sum and added them as elements to the new array and returned it
+'''

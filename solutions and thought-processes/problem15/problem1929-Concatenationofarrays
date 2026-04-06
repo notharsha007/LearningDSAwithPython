@@ -1,0 +1,21 @@
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        dupe=nums
+        ans= nums+dupe
+        return ans
+    
+
+''' My thoughts and Experience
+
+This is just simple.copy the array into a new one and simply add them and return.
+
+Complexity
+
+Time:
+
+O(n)
+
+Space:
+
+O(n)
+'''
