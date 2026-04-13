@@ -1,0 +1,10 @@
+# Sneaky Try But wrong
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        v1=int(s)
+        v2=int(t)
+        if sum(v1) == sum(v2):
+            return True
+        else:
+            return False
